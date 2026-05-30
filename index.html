@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webny - Generator Starter HTML5 Canvas Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Webny - Generator Starter HTML5 Canvas Game</h1>
+  </header>
+
+  <main class="container">
+    <section class="form">
+      <label>
+        Judul Game
+        <input type="text" id="title" placeholder="Dodge the Blocks" value="Dodge the Blocks" />
+      </label>
+
+      <label>
+        Genre
+        <select id="genre">
+          <option>Dodge the Blocks</option>
+          <option>Platformer</option>
+          <option>Shooter</option>
+        </select>
+      </label>
+
+      <label>
+        Ukuran Layar
+        <div class="row">
+          <input type="number" id="width" value="800" min="200" max="2000" />
+          <span> x </span>
+          <input type="number" id="height" value="600" min="200" max="2000" />
+        </div>
+      </label>
+
+      <label>
+        FPS Target
+        <input type="number" id="fps" value="60" min="1" max="144" />
+      </label>
+
+      <button id="generate">Generate Starter Files</button>
+    </section>
+
+    <section class="downloads" id="downloads" aria-live="polite" hidden>
+      <h2>Unduh Starter Files</h2>
+      <div class="btns" id="downloadBtns"></div>
+      <p class="note">Tip: Anda bisa mengunduh tiap file satu-per-satu jika diinginkan.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
